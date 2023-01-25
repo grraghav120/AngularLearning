@@ -11,6 +11,6 @@ export class AppComponent {
   collegeName = 'Hindustan College of Science and Technology';
   course='Bachelor of Technology';
   constructor(){
-    this.name='Raghav';
+    
   }
 }
