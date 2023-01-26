@@ -1,0 +1,5 @@
+<div><input type="text" class="from-control" [(ngModel)]="userName"></div>
+<div><p>{{userName}}</p></div>
+<div>
+    <button [disabled]="onClick()" (click)="resetData()" class="btn btn-primary" autocomplete="off">Reset Text</button>
+</div>

@@ -1,9 +1,20 @@
 <h3>Third Day Practice</h3>
 <p>third-day works!</p>
 <!-- 03 day FormsModule -->
-<!-- <form> -->
-  <input type="text" placeholder="Enter Your Name" [(ngModel)]="server" class="form-control"/>
-<!-- </form> -->
+
+<input type="text" placeholder="Enter Your Name" [(ngModel)]="server" class="form-control"/>
 <div>{{ server }}</div>
 <h3>Awesome</h3>
+<button class="btn btn-primary" (click)="onClick()">Get Name</button>
+<p>{{serverName}}</p>
 
+<!-- ngIF Implemented -->
+
+<input type="text" placeholder="Enter the Text" [(ngModel)]="data" />
+<p *ngIf="isData;else Elsewala">{{data}}</p>
+<ng-template #Elsewala>
+    <p>
+        No data
+    </p>
+</ng-template>
+<button class="btn btn-primary" (click)="onTest()">F**k Here</button>

@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
 })
 export class ThirdDayComponent {
   server: string = 'Raghav Garg';
-  constructor(){}
+  serverName: string;
+  data:string='';
+  isData:boolean=false;
+  constructor() {}
+  onClick() {
+    this.serverName = 'Name is : ' + this.server;
+  }
+  onTest(){
+    this.isData=true;
+  }
 }

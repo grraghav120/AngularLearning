@@ -15,4 +15,7 @@ export class SecondDayComponent {
     console.log(event.type);
     this.name=(<HTMLInputElement>event.target).value;
   }
+  onClick(){
+    return true;
+  }
 }
