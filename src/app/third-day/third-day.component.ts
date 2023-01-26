@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./third-day.component.css'],
 })
 export class ThirdDayComponent {
-  server: string = '';
+  server: string = 'Raghav Garg';
+  constructor(){}
 }
