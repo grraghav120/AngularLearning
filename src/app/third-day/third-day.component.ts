@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./third-day.component.css'],
 })
 export class ThirdDayComponent {
-  server: string = '';
+  server: string = 'Raghav Garg';
+  serverName: string;
+  data:string='';
+  isData:boolean=false;
+  constructor() {}
+  onClick() {
+    this.serverName = 'Name is : ' + this.server;
+  }
+  onTest(){
+    this.isData=true;
+  }
 }

@@ -6,12 +6,16 @@ import { DemoComponent } from './demo/demo.component';
 import { SecondDayComponent } from './second-day/second-day.component';
 import { ThirdDayComponent } from './third-day/third-day.component';
 import { FormsModule } from '@angular/forms';
+import { Assignment2Component } from './assignment2/assignment2.component';
+import { Assignment03Component } from './assignment03/assignment03.component';
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
     SecondDayComponent,
-    ThirdDayComponent
+    ThirdDayComponent,
+    Assignment2Component,
+    Assignment03Component
   ],
   imports: [
     BrowserModule,
