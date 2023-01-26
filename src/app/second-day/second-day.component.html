@@ -1,0 +1,15 @@
+<!-- For data binding Practice -->
+
+<!-- 
+There are one data binding that is String interpolation {{ data }}
+-->
+
+<h3>The number - {{ numberGiven }} is written in words as {{ numberWord }} </h3>
+<h3>The number - {{ numberGiven2 }} is written in words as {{ numberWord2 }} </h3>
+
+<!--
+    Property Binding  [property]="data"
+-->
+<button class="btn btn-danger">Click Me</button>
+<div><input type="text" (input)="onUpdateName($event)"></div>
+<div>{{name}}</div>
