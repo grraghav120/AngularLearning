@@ -4,15 +4,17 @@
   <button class="btn btn-primary" (click)="onClick()">
     Displaying Details
   </button>
-  <br>
+  <br />
   <p *ngIf="element % 2 === 0; else Elsewala">Secret Password = "tuna"</p>
   <ng-template #Elsewala>
     <p>Secret Password = "chuna"</p>
   </ng-template>
-  
-  <div *ngFor="let data of countLog;let i =index">
-    <p [ngStyle]="{ backgroundColor: getColor(),color:gettextColor() }" >{{ data }}</p>
-    <p>{{i}}</p>
+
+  <div *ngFor="let data of countLog; let i = index">
+    <p [ngStyle]="{ backgroundColor: getColor(), color: gettextColor() }">
+      {{ data }}
+    </p>
+    <p>{{ i }}</p>
   </div>
   <p>Assignment - 3 Ends</p>
 </div>

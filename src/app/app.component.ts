@@ -10,6 +10,7 @@ export class AppComponent {
   branch = 'Computer Science Engineering';
   collegeName = 'Hindustan College of Science and Technology';
   course='Bachelor of Technology';
+  title: any;
   constructor(){
     
   }
