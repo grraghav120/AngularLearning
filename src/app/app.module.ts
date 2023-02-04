@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment03Component } from './assignment03/assignment03.component';
 import { NewComponentComponent } from './new-component/new-component.component';
+import { SwtichCasesComponent } from './swtich-cases/swtich-cases.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { NewComponentComponent } from './new-component/new-component.component';
     ThirdDayComponent,
     Assignment2Component,
     Assignment03Component,
-    NewComponentComponent
+    NewComponentComponent,
+    SwtichCasesComponent
   ],
   imports: [
     BrowserModule,
