@@ -1,0 +1,17 @@
+<div class="container">
+    <div>
+        <h1>Swtich Case in Angular</h1>
+    </div>
+    <div>
+        <input type="text" class="form-control" placeholder="Enter any number from 5,10,100" [(ngModel)]="value">
+    </div>
+    <div [ngSwitch]="value" class="valueText">
+        <p *ngSwitchCase="5">Value is 5</p>
+        <p *ngSwitchCase="10" >Value is 10</p>
+        <p *ngSwitchCase="100" >Value is 100</p>
+        <p *ngSwitchDefault>Value is Default</p>
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="onClick()">Console Value</button>
+    </div>
+</div>
