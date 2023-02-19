@@ -5,7 +5,6 @@ import { LoggingServiceService } from '../logging-service.service';
   selector: 'app-swtich-cases',
   templateUrl: './swtich-cases.component.html',
   styleUrls: ['./swtich-cases.component.css'],
-  providers: [LoggingServiceService],
 })
 export class SwtichCasesComponent implements OnInit {
   value: number;

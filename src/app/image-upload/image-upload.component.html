@@ -1,0 +1,17 @@
+<input type="file" (change)="onFileChange($event)" accept="image/*" />
+<canvas
+  #canvas
+  (mousedown)="onMouseDown($event)"
+  (mousemove)="onMouseMove($event)"
+  (mouseup)="onMouseUp($event)"
+  (touchstart)="onTouchStart($event)"
+  (touchmove)="onTouchMove($event)"
+  (touchend)="onTouchEnd($event)"
+>
+</canvas>
+
+<div *ngIf="cropSrc">
+  <img [src]="cropSrc" height="200px" width="200px" />
+  <button (click)="save()">Save</button>
+  <button (click)="onCancel()">Cancel</button>
+</div>
